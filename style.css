@@ -31,7 +31,7 @@ header {
 .hero-desktop {
   display: none;
 }
-main {
+.imgs {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,7 +93,9 @@ footer {
   right: 10rem;
   display: none;
 }
-
+.logo2 {
+  display: none;
+}
 .btn {
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
   box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
@@ -134,14 +136,17 @@ footer {
     width: 100%;
   }
   header {
-    grid-area: 1/1;
-    padding: var(--desktop-padding);
-    z-index: 4;
+    display: none;
   }
 
   section {
     padding: unset;
     width: 47.5rem;
+  }
+  .logo2 {
+    display: inline-block;
+    position: absolute;
+    top: 11.7rem;
   }
   .container2 {
     background-image: url(./images/bg-pattern-desktop.svg);
@@ -180,5 +185,8 @@ footer {
     padding: unset;
     margin-top: 4rem;
     width: 47.5rem;
+  }
+  .error-img {
+    top: 1.2rem;
   }
 }
